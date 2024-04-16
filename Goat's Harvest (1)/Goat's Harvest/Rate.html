@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goat Shop</title>
+<style>
+    body {
+        background-image: url('image/goatcontainer.png');
+        background-size: cover;
+        background-position: center;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        max-width: 500px;
+        height: 350px;
+        margin: 100px auto;
+        padding: 20px;
+        background-image: url('image/goatback.png');
+        border-radius: 50px;
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="number"],
+    select {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin: 10px 0; 
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #7f7abd;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: absolute;
+        bottom: 180px;
+        right: 650px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2 style="padding-left: 150px;">Order Your </h2>
+    <form>
+        <label for="name" style="font-weight: bolder;">Name</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="phone" style="font-weight: bolder;">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="size" style="font-weight: bolder;">Select Goat Size</label>
+        <select id="size" name="size" required>
+            <option value="large">Select</option>
+            <option value="large">Large</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
